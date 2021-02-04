@@ -18,3 +18,13 @@
   proteger o acesso direto as mesmas. </p>
   
   <hr/> <br/>
+  
+  <p> Existe um backup dos dados cadastrados para teste no arquivo DaLance.backup. Para informações de como fazer o restore do backup acesse:
+ https://blog.tecnospeed.com.br/backup-e-restore-postgresql/ </p>
+ <hr/>
+ <p> Para gerar migrations e atualizar o banco de dados através do entityFramework utilize-se dos comandos abaixo na pasta raiz do projeto(powershell):</p>
+ <p>
+ 1- dotnet ef migrations add 'Init_Migrations' --project .\DaLance.Entity\DaLance.Entity.csproj --startup-project .\DaLance\DaLance.csproj
+ 2- dotnet ef database update --project .\DaLance.Entity\DaLance.Entity.csproj --startup-project .\DaLance\DaLance.csproj
+</p>
+  
