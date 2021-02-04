@@ -24,7 +24,7 @@
  <hr/>
  <p> Para gerar migrations e atualizar o banco de dados através do entityFramework utilize-se dos comandos abaixo na pasta raiz do projeto(powershell):</p>
  <p>
- 1- dotnet ef migrations add 'Init_Migrations' --project .\DaLance.Entity\DaLance.Entity.csproj --startup-project .\DaLance\DaLance.csproj
+ 1- dotnet ef migrations add 'Init_Migrations' --project .\DaLance.Entity\DaLance.Entity.csproj --startup-project .\DaLance\DaLance.csproj<br/>
  2- dotnet ef database update --project .\DaLance.Entity\DaLance.Entity.csproj --startup-project .\DaLance\DaLance.csproj
 </p>
   
