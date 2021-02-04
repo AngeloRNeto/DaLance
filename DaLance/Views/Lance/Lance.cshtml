@@ -1,0 +1,18 @@
+﻿<!-- Icons Grid -->
+<div ng-controller="LanceController">
+    <section ng-if="produtos.length > 0" class="features-icons bg-light text-center" style="display: block !important;margin-top: -4pc;">
+        <h2>Produtos para o lance</h2>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" ng-repeat="p in produtos">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style=" border: groove; border-radius: 4%;">
+                        <h3>{{p.nome}}</h3>
+                        <p class="lead mb-0">Valor inicial: R$ {{p.valor}}</p>
+                        <button type="submit" class="btn btn-block btn-lg btn-secondary" ng-click="newLance(p.id)">Apostar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

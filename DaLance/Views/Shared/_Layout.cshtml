@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DaLance</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="~/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+</head>
+
+<body ng-app="app">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a asp-area="" asp-controller="Home" asp-action="Index">Da Lance</a>
+        </div>
+    </nav>
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @if (Context.Request.Path.Value == "/" || Context.Request.Path.Value == "/Home" || Context.Request.Path.Value == "/Home/Index")
+    {
+        @Html.Partial("~/Views/Lance/Lance.cshtml")
+    }
+    <!-- Icons Grid -->
+    <!--<section class="features-icons bg-light text-center" style=" display: block !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style=" border: groove; border-radius: 4%;">
+                        <div class="features-icons-icon d-flex">
+                            <i class="icon-screen-desktop m-auto text-primary"></i>
+                        </div>
+                        <h3>Fully Responsive</h3>
+                        <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <i class="icon-layers m-auto text-primary"></i>
+                        </div>
+                        <h3>Bootstrap 4 Ready</h3>
+                        <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <i class="icon-check m-auto text-primary"></i>
+                        </div>
+                        <h3>Easy to Use</h3>
+                        <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - DaLance
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/vendor/angular.min.js"></script>
+    <script src="~/vendor/angular-mocks.js"></script>
+
+    <script src="~/scripts/app.js"></script>
+    <script src="~/scripts/module/repository.module.js"></script>
+    <script src="~/scripts/module/business.module.js"></script>
+    <script src="~/scripts/module/controller.module.js"></script>
+    @*HOME*@
+    <script src="~/scripts/repositories/home.rep.js"></script>
+    <script src="~/scripts/controller/home.controller.js"></script>
+    <script src="~/scripts/business/home.bo.js"></script>
+    @*PRODUTO*@
+    <script src="~/scripts/repositories/produto.rep.js"></script>
+    <script src="~/scripts/controller/produto.controller.js"></script>
+    <script src="~/scripts/business/produto.bo.js"></script>
+    @*LANCE*@
+    <script src="~/scripts/repositories/lance.rep.js"></script>
+    <script src="~/scripts/controller/lance.controller.js"></script>
+    <script src="~/scripts/business/lance.bo.js"></script>
+    @*USUARIO*@
+    <script src="~/scripts/repositories/usuario.rep.js"></script>
+    <script src="~/scripts/controller/usuario.controller.js"></script>
+    <script src="~/scripts/business/usuario.bo.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <style>
+        .bg-light {
+            background-color: #C0C0C0 !important;
+        }
+    </style>
+</body>
+</html>

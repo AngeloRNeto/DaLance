@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DaLance.Service/1.0.0": {
+        "dependencies": {
+          "DaLance.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DaLance.Service.dll": {}
+        }
+      },
+      "DaLance.Domain/1.0.0": {
+        "runtime": {
+          "DaLance.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DaLance.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DaLance.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,9 @@
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\bin\Debug\netcoreapp3.1\DaLance.Domain.deps.json
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\bin\Debug\netcoreapp3.1\DaLance.Domain.dll
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\bin\Debug\netcoreapp3.1\DaLance.Domain.pdb
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\obj\Debug\netcoreapp3.1\DaLance.Domain.AssemblyInfoInputs.cache
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\obj\Debug\netcoreapp3.1\DaLance.Domain.AssemblyInfo.cs
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\obj\Debug\netcoreapp3.1\DaLance.Domain.csproj.CoreCompileInputs.cache
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\obj\Debug\netcoreapp3.1\DaLance.Domain.dll
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\obj\Debug\netcoreapp3.1\DaLance.Domain.pdb
+C:\Users\angel\source\repos\DaLance\DaLance.Domain\obj\Debug\netcoreapp3.1\DaLance.Domain.csprojAssemblyReference.cache

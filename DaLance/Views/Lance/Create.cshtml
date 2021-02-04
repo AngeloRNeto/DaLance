@@ -1,0 +1,27 @@
+﻿@model DaLance.Domain.Models.Lance
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div style="padding-top:2em;" class="container" ng-controller="LanceController">
+    <h4>Cadastro de Lance</h4>
+    <hr />
+    <div class="col-md-4">
+        <form>
+            @Html.ListBoxFor(model=>model.usuario, new MultiSelectList(ViewBag.lstUsers))
+
+                <div class="form-group">
+                    <label asp-for="valor" class="control-label">Valor:</label>
+                    <input asp-for="valor" ng-model="produto.valor" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Salvar" class="btn btn-primary" ng-click="saveLance()" />
+                </div>
+            </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
